@@ -1,3 +1,98 @@
+# 无光之海汉化
+
+项目延续自：
+>https://github.com/InstantComet/SunlessSea?tab=readme-ov-file
+
+
+赞美前人大佬，正是仰赖十年来各位船长的接力，大家才能无障碍玩到这款游戏
+
+
+## 修改存档数值
+
+1. 首先打开游戏，开始新游戏，手动存一个档
+
+2. windows前往存档JSON文件：
+
+```
+C:\Users\{你的windows用户名}\AppData\LocalLow\Failbetter Games\Sunless Sea\saves\{你的存档名}.json
+```
+找不到的话从C盘里找AppData目录往下找
+
+3. 找到后用Nodepad或者VSCode之类的文本/代码编辑器打开，然后搜索以下数字，并修改数值：
+
+102894 = Iron 铁
+102895 = Mirrors 镜子
+102896 = Veils 面纱
+102897 = Hearts 红心
+102898 = Pages 纸页
+
+**修改对应项所在的Json object里的Level属性，Level是多少游戏中的数值就是多少**
+
+
+起始一般为25，改到50基本可以横着走了，追求游戏沉浸感建议改到30到40
+
+
+比如铁对应的Json object大概长这样：
+```
+{"Name":null,
+"EquippedPossession":null,
+"Relationships":[],
+"XP":0,
+"EffectiveLevelModifier":1,
+"TargetQuality":null,
+"TargetLevel":null,
+"CompletionMessage":null,
+"Level":50, // <- 改这里！！
+"AssociatedQuality":null,
+"AssociatedQualityId":102894,
+"QualityName":null,
+"QualityDescription":null,
+"QualityImage":null,
+"QualityNature":null,
+"QualityCategory":null,
+"QualityAllowedOn":null,
+"Id":0},
+```
+
+其他重要资源ID：
+
+102025 = Terror （恐惧值）
+102026 = Supplies （补给）
+102027 = Fuel （燃料）
+102028 = Echoes （回声/钱）
+102029 = Hull （船壳血量）
+102030 = Crew （船员数量）
+102032 = Secret
+102328 = Objective: An Admiralty Commission - check wki
+102973 = Something Awaits You - use the wiki to deciede what to change the "Level": to
+108545 = Fragments
+109124 = Acquaintance: Sojourning with the Sisters - check wki
+109775 = Deliveries from the Salt Lions - check wki
+110310 = Favours: A Drop of Darkness - check wki
+110360 = Another Day: Time, the Healer
+110364 = A New Recruit
+110370 = Objective: Collecting Cargo for the Cheery Man - check wki
+112704 = Principles' End: Principality - check wki
+115051 = Memoirs: Beginner's Luck - this one you would have to delete the whole code block it is in to remove the attribute
+116006 = Lineage: Captains Lost - set to 1+ to unlock The Labyrinth of Tigers in London
+117204 = Menaces: Yearning, Burning （威胁，一般来自见到阳光后，累积多了会死）
+
+
+其他通过修改文件直接获得高级武器，船官等，请参考：
+https://steamcommunity.com/sharedfiles/filedetails/?id=588725254
+
+
+无光之海wiki百科以及全部海图：
+https://sunlesssea.fandom.com/wiki/Map
+
+
+另外建议打个给船加速的Mod，之前安装过找不见了，找到了会附在这里
+
+
+## 以下是原汉化项目作者的使用教程，亲测可用
+
+
+
 ~~**FBG在2023年1月26日进行的更新(版本2.2.11.3212)摧毁了界面汉化。因此，本项目不再进行活跃维护（记仇）**~~
 # **本项目仅包含文本汉化，要获得界面汉化体验，请参考[tinygrox](https://github.com/tinygrox)的项目[SunlessSeaCN](https://github.com/tinygrox/SunlessSeaCN)**
 <br />
